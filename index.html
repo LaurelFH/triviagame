@@ -28,22 +28,157 @@
 			<div class="container-fluid">
 			<!--empty div to style the form-->
 				<!--start the form-->
-				<form>
-				<h1>Welcome to Shujin</h1>
-					<p>Congratulations for making it this far...are you ready for a challenge? Will you survive blah blah blah?</p>
-					<p> Take the entrance exam to find out...</p>
+				<form class ="form-horizontal"><!--makes the form questions float to the right-->
+				<legend><h1>Welcome to Shujin</h1></legend>
 
-					<button>Start the Exam</button>
+					<div class= "row"><!--info div row 1-->
+						<p>Congratulations for making it this far...are you ready for a challenge? Will you survive blah blah blah?</p>
+						<p> Take the entrance exam to find out...</p>
+						<!--starts the clock 1 second when the button is clicked-->
+						<button onclick="startClock()">Start the Exam</button>
+					</div><!--closes info div row 1-->
 							<!--empty div for the exam questions-->
 							<div id="examDsiplay">
 							</div>
+<fieldset>
 
+		<!-- Form Name -->
+		<!--<legend>Midterm Exam</legend>-->
 
+<!-- question 1 -->
+					<div class="form-group">
+  					<label class="col-md-4 control-label" for="examquestions">A soul is composed of appetite, spirit, and what else?</label>
+ 						<div class="col-md-4">
+  							<div class="radio">
+   					 		<label for="examquestions-0">
+     						 <input type="radio" name="examquestions" id="examquestions-0" value="1" >Option one
+   							 </label>
+							</div><!--ends radio button for oprtion 1-->
+  <div class="radio">
+   			 <label for="examquestions-1">
+      		<input type="radio" name="examquestions" id="examquestions-1" value="0">Option two
+    		</label>
+			</div>
+ 			 <div class="radio">
+  		  <label for="examquestions-2">
+    	  <input type="radio" name="examquestions" id="examquestions-2" value="0">
+     		 Option three
+   				 </label>
+			</div>
+  <div class="radio">
+    <label for="examquestions-3">
+      <input type="radio" name="examquestions" id="examquestions-3" value="0">
+      Option four
+    </label>
+	</div>
+  </div>
+</div>
 
+<!-- question 2-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">What event did Emperor Nero add to the Olympics so he could participate? </label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+      Option one
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="0">
+      Option two
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="0">
+      Option three
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-3">
+      <input type="radio" name="radios" id="radios-3" value="0">
+      Option four
+    </label>
+	</div>
+  </div>
+</div>
+
+<!--question 3-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">How many colors does it take to print every region without any two adjacent ones being the same color?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+      Option one
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      Option two
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="">
+      Option three
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-3">
+      <input type="radio" name="radios" id="radios-3" value="">
+      Option four
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- question 4-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">What is the origin of the English word "talent"?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1">
+      Option one
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="0">
+      Option two
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="0">
+      Option three
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-3">
+      <input type="radio" name="radios" id="radios-3" value="0">
+      Option four
+    </label>
+	</div>
+  </div>
+</div>
+
+</fieldset>
 			
+					
+
+					<!--grade me button to submit the grade-->
 
 
-			
+					<!--empty div for the timer-->
+					<div id="timerDisplay">
+						</div>
+
+
 					<!--empty div the score display-->
 					<div id="scoreDisplay">
 					<p>score goes here</p>
@@ -56,3 +191,18 @@
 			</div><!--end container-fluid-->
 		</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
