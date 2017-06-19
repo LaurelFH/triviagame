@@ -3,26 +3,20 @@
 //score related variables 
 var correct = 0;
 var incorrect = 0;
+var totalQuestions = 4;
 
 //timer related variables 
-var countDown = 2;
+var countDown = "";
 
 
-
-
-
-
-
-
-//form interactivity related variables? 
-
+//click event for the button
+$("#timerDisplay").click(startClock);
 
 
 
 
 
 ///////////////////functions 
-
 
 //starts the clock once the button is clicked and counts down from 2 mins or 120000 milliseconds for the form completion 
 /*function startClock(minutes, seconds){
@@ -46,25 +40,35 @@ document.getElementbyId("timerDisplay").innerHTML = mins + ":" + sec;
 */
 
 function startClock(){
-	var sec = setInterval(startclock(){
-		math.floor(currentTime % (1000 * 60))/1000);
-	})
+	var timeLeft = 2;
+	var seconds;
 
-$("#timerDisplay").html = secs;
 
-	if(currentTime < 0){
 
-		clearInterval(sec);
-		$("timerDisplay").html = "Time is up!";
-	}
 
-}, 1000);
+}
+
+//displays the values of the clock in the timerdisplay space 
 
 //tallys up the number of correct and incorrect responses (the correct have a value of 1 in the buttons)
-
 function countQuestions(){
 
+	//check if selected and add the value of the radio buttons up
+ 	checkQuestion("examquestions-0");
+ 	checkQuestion("examquestions-1");
 
+
+ 	//need to find incorrect, we have the total and the number correct total -correct?
+
+
+}
+
+function checkQuestion(answer){
+
+	if(document.getElementById(answer).checked){
+
+ 		correct += document.getElementbyId(answer).value;
+ 	}
 
 
 }
@@ -75,8 +79,13 @@ function countQuestions(){
 //Event flow for the quiz game
 
 $(document).ready(function() {
-	
-	setInterval(startclock, 1000);
+	//start the coutndown clock when clicked 	
+	$("button").click(startClock()
+		alert("here we go");
+	});
+
+		//
+
 
 	}
 
