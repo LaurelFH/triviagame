@@ -29,19 +29,20 @@
 			<!--empty div to style the form-->
 				<!--start the form-->
 				<form class ="form-horizontal" role="form"><!--makes the form questions float to the right-->
-				<legend><h1>Welcome to Shujin</h1></legend>
 
+        <div id="introhead">
+				<legend><h1>Welcome to Shujin</h1></legend>
 					<div class= "row"><!--info div row 1-->
 						<p>Congratulations for making it this far...are you ready for a challenge? Will you survive blah blah blah?</p>
 						<p> Take the entrance exam to find out...</p>
 						<!--starts the clock 1 second when the button is clicked-->
-						<button>Start the Exam</button>
+						<button id="startButton">Start the Exam</button>
 					</div><!--closes info div row 1-->
+          </div>
+
 							<!--empty div for the exam questions-->
 							<div id="examDisplay">
-							</div>
-<!--<fieldset>-->
-
+				<!--<fieldset>-->
 		<!-- Form Name -->
 		<!--<legend>Midterm Exam</legend>-->
 <div class="row">
@@ -60,7 +61,6 @@
       		<input type="radio" name="examquestions" id="examquestions-1" value="0">Option two
     		</label>
 			</div><!--ends radio button for question 1 option 2-->
-
  			 <div class="radio">
   		  <label for="examquestions-2">
     	  <input type="radio" name="examquestions" id="examquestions-2" value="0">
@@ -168,18 +168,15 @@
 	</div>
   </div>
 </div>
-
+</div><!--ends the questions div-->
 <!--</fieldset>-->
 			
-					
-
-					<!--grade me button to submit the grade-->
+								<!--grade me button to submit the grade-->
 
 
 					<!--empty div for the timer-->
-					<div id="timerDisplay">2:00
+					<div id="timerDisplay">
 						</div>
-
 
 					<!--empty div the score display-->
 					<div id="scoreDisplay">

@@ -5,17 +5,41 @@ p {
 
 }
 
+body {
+
+	background-image: url("../images/persona5bg.png");
+}
 
 
+.form-horizontal{
+
+	background-color: white;
+	width: 800px;
+	text-align: center;
+	padding-left: 50px;
+	padding-bottom: 50px;
+	padding-top: 10px;
+
+}
+
+h1{
+	text-align: center;
 
 
+}
 
 
+#introhead{
+
+	text-align: center;
+
+}
+
+.container-fluid{
+	
 
 
-
-
-
+}
 
 
 
