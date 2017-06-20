@@ -100,6 +100,82 @@ function countQuestions(){
 function checkQuestion(answer){
 	alert(answer);
 	if(document.getElementById(answer) != null && document.getElementById(answer).checked){
+ 		
+		//switch statement to check the values of the answers
+		switch(answer){
+
+			case "examquestions0":
+				correct += examquestions0; 
+				break;
+			case "examquestions1":
+				correct += examquestions1; 
+				break;			
+
+			case "examquestions2":
+				correct += examquestions2; 
+				break;
+
+			case "examquestions3":
+				correct += examquestions3; 
+				break;	
+
+			case "examquestions4":
+				correct += examquestions4; 
+				break;	
+
+			case "examquestions5":
+				correct += examquestions5; 
+				break;	
+
+			case "examquestions6":
+				correct += examquestions6; 
+				break;	
+
+			case "examquestions7":
+				correct += examquestions7; 
+				break;
+
+			case "examquestions8":
+				correct += examquestions8; 
+				break;
+
+			case "examquestions9":
+				correct += examquestions9 
+				break;	
+
+			case "examquestions10":
+				correct += examquestions10; 
+				break;	
+
+			case "examquestions11":
+				correct += examquestions11; 
+				break;	
+
+			case "examquestions12":
+				correct += examquestions12; 
+				break;	
+					
+			case "examquestions13":
+				correct += examquestions13; 
+				break;	
+
+			case "examquestions14":
+				correct += examquestions14; 
+				break;
+
+			case "examquestions15":
+				correct += examquestions15; 
+				break;
+
+
+
+
+
+		}
+
+
+
+
  		//correct += document.getElementbyId(answer).value;
  	}
 }
