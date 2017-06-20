@@ -93,12 +93,12 @@ function countQuestions(){
 
  	//need to find incorrect, we have the total and the number correct total -correct?
  	 incorrect = totalQuestions - correct;
- 	 $("#scoreDisplay").text("<p>Incorrect: " + incorrect + "</p>" + "<p>Correct: " + correct + "</p>");
+ 	 $("#scoreDisplay").text("Incorrect: " + incorrect  + " Correct: " + correct);
 
 }
 
 function checkQuestion(answer){
-	alert(answer);
+	
 	if(document.getElementById(answer) != null && document.getElementById(answer).checked){
  		
 		//switch statement to check the values of the answers
@@ -154,7 +154,7 @@ function checkQuestion(answer){
 			case "examquestions12":
 				correct += examquestions12; 
 				break;	
-					
+
 			case "examquestions13":
 				correct += examquestions13; 
 				break;	
