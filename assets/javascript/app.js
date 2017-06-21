@@ -180,6 +180,17 @@ function checkQuestion(answer){
  	}
 }
 
+//function to show the form element when the button is clicked 
+function showForm() {
+
+    var x = document.getElementById('examDisplay');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
 
 
 
@@ -188,6 +199,7 @@ function checkQuestion(answer){
 $(document).ready(function() {
 	//click event for the button
 	$("#startButton").click(function(){
+		showForm();
 		setup();
 		myInterval = setInterval(timer, 1000);
 
