@@ -50,10 +50,6 @@ function timer(){
 function setup(){
 
 	countDown = TOTALTIME;
-
-
-
-
 }
 
 //starts the clock when the button is pressed 
@@ -168,9 +164,6 @@ function checkQuestion(answer){
 				break;
 
 
-
-
-
 		}
 
 
@@ -192,16 +185,33 @@ function showForm() {
 }
 
 
+//reset function? 
 
+/*function resetGame{
+
+	var TOTALTIME = 10;
+	var countDown = 0;
+	var correct = 0;
+	var incorrect = 0;
+	var totalQuestions = 4;
+	//$("#examDisplay").hide();
+}
+
+*/
 
 //Event flow for the quiz game
 
 $(document).ready(function() {
+
+	//hide the examform div from view
+	$("#examDisplay").hide();
 	//click event for the button
 	$("#startButton").click(function(){
+		//show the exam questions to the player
 		showForm();
 		setup();
 		myInterval = setInterval(timer, 1000);
+		//resetGame();
 
 	});
 
